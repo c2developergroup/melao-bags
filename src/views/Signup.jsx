@@ -5,14 +5,8 @@ import { VscArrowLeft } from "react-icons/vsc";
 export const Signup = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="mt-20">
       <>
-        <VscArrowLeft
-          className="cursor-pointer  text-2xl hover:text-red-600 transition duration-300 my-3 mx-3"
-          onClick={() => {
-            navigate("/");
-          }}
-        />
         <section className="">
           <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0">
             <a

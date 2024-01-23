@@ -3,6 +3,8 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
 import { VscAccount } from "react-icons/vsc";
+import { IoIosMenu } from "react-icons/io";
+import { IoMdHeartEmpty } from "react-icons/io";
 
 export const Navbar = () => {
   const navigate = useNavigate();
@@ -36,30 +38,11 @@ export const Navbar = () => {
           (isOpen ? "resp:right-0" : "resp:-right-60")
         }
       >
-        <ul className="flex items-center ml-10 gap-16 justify-between resp:mt-5 resp:flex-col">
-          <FiSearch className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
-          <li className="my-2.5">
-            <NavLink
-              onClick={() => {
-                setIsOpen(false);
-              }}
-              to="/"
-              className="text-xl font-medium ml-6 hover:text-red-600 hover:transition-all duration-300 resp:m-0"
-            >
-              LO NUEVO
-            </NavLink>
-          </li>
-          <li className="my-2.5">
-            <NavLink
-              onClick={() => {
-                setIsOpen(false);
-              }}
-              to="/"
-              className="text-xl font-medium ml-6 hover:text-red-600 hover:transition-all duration-300 resp:m-0"
-            >
-              PRODUCTOS
-            </NavLink>
-          </li>
+        <ul className="flex items-center gap-16 justify-between resp:mt-5 resp:flex-col">
+          <div className="icons-left flex justify-start">
+            <IoIosMenu className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
+            <FiSearch className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
+          </div>
           <img
             src="/melaologo.jpg"
             className="h-16 ml-10 lg:ml-10 cursor-pointer"
@@ -67,36 +50,17 @@ export const Navbar = () => {
               navigate("/");
             }}
           />
-          <li className="my-2.5">
-            <NavLink
-              onClick={() => {
-                setIsOpen(false);
-              }}
-              to="/"
-              className="text-xl font-medium ml-6 mr-6 hover:text-red-600 hover:transition-all duration-300 resp:m-0"
-            >
-              OFERTAS
-            </NavLink>
-          </li>
-          <li className="my-2.5">
-            <NavLink
-              onClick={() => {
-                setIsOpen(false);
-              }}
-              to="/"
-              className="text-xl font-medium ml-6 mr-6 hover:text-red-600 hover:transition-all duration-300 resp:m-0"
-            >
-              CONTACTO
-            </NavLink>
-          </li>
-          <IoBagOutline className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
-          <VscAccount
-          className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300"
-          onClick={() => {
-            navigate("/signup");
-            setIsOpen(false);
-          }}
-          />
+          <div className="icons-right flex justify-end">
+            <IoMdHeartEmpty className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
+            <VscAccount
+            className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300"
+            onClick={() => {
+              navigate("/signup");
+              setIsOpen(false);
+            }}
+            />
+            <IoBagOutline className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
+          </div>
         </ul>
       </nav>
     </header>
