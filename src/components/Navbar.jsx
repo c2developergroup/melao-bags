@@ -38,19 +38,19 @@ export const Navbar = () => {
           (isOpen ? "resp:right-0" : "resp:-right-60")
         }
       >
-        <ul className="flex items-center gap-16 justify-between resp:mt-5 resp:flex-col">
-          <div className="icons-left flex justify-start">
+        <ul className="flex items-center gap-96 justify-between resp:mt-5 resp:flex-col">
+          <div className="icons-left flex justify-start ml-4 gap-6">
             <IoIosMenu className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
             <FiSearch className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
           </div>
           <img
             src="/melaologo.jpg"
-            className="h-16 ml-10 lg:ml-10 cursor-pointer"
+            className="h-16 ml-10 lg:ml-32 cursor-pointer"
             onClick={() => {
               navigate("/");
             }}
           />
-          <div className="icons-right flex justify-end">
+          <div className="icons-right flex justify-end ml-10 gap-6">
             <IoMdHeartEmpty className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
             <VscAccount
             className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300"
