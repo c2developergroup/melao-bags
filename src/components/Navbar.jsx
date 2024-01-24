@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
 import { VscAccount } from "react-icons/vsc";
-import { IoIosMenu } from "react-icons/io";
 import { IoMdHeartEmpty } from "react-icons/io";
+import { SideBar } from "./Sidebar";
 
 export const Navbar = () => {
   const navigate = useNavigate();
@@ -38,55 +38,33 @@ export const Navbar = () => {
           (isOpen ? "resp:right-0" : "resp:-right-60")
         }
       >
-        <ul className="flex items-center gap-96 justify-between resp:mt-5 resp:flex-col">
-          <div className="icons-left flex justify-start ml-4 gap-6">
-            <div
-              title="Menu"
-              id="menuToggle"
-              onClick={() => setOpen(!isOpen)}
-            >
-              <input type="checkbox" className="cursor-pointer w-10 h-10 hover:bg-red-600" checked={isOpen} />
-              <span></span>
-              <span></span>
-              <span></span>
-              <ul id="menu">
-                <li
-                  onClick={() => {
-                    navigate("/");
-                  }}
-                >
-                  Home
-                </li>
-                <li>
-                  <a href="#">Services</a>
-                </li>
-                <li>
-                  <a href="#">About</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-              </ul>
+        <ul className="flex items-center justify-between resp:mt-5 resp:flex-col">
+          <div className="flex items-center">
+            <div className="w-20">
+              <div>
+                <SideBar />
+              </div>
+              <div>
+                <FiSearch className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
+              </div>
             </div>
-            <FiSearch className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
-          </div>
-          <img
-            src="/melaologo.jpg"
-            className="h-16 ml-10 lg:ml-32 cursor-pointer"
-            onClick={() => {
-              navigate("/");
-            }}
-          />
-          <div className="icons-right flex justify-end ml-10 gap-6">
-            <IoMdHeartEmpty className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
-            <VscAccount
-              className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300"
+            <img
+              src="/melaologo.jpg"
+              className="h-16 ml-10 lg:ml-32 cursor-pointer"
               onClick={() => {
-                navigate("/signup");
-                setIsOpen(false);
+                navigate("/");
               }}
             />
-            <IoBagOutline className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
+            <div className="icons-right flex justify-end ml-10 gap-6">
+              <IoMdHeartEmpty className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
+              <VscAccount
+                className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300"
+                onClick={() => {
+                  navigate("/signup");
+                }}
+              />
+              <IoBagOutline className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
+            </div>
           </div>
         </ul>
       </nav>
