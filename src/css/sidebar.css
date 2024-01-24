@@ -1,15 +1,4 @@
 
-.newburgerintown {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 40vh;
-  width:50%;
-  min-width: 400px;
-  height: 60px;
-  margin: 0 auto;
-}
-
 /**Mobile (Hamburger-)Menu from here on**/
 
 /** This is kind of a styled trigger here **/

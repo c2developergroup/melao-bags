@@ -45,10 +45,6 @@ export const Navbar = () => {
               id="menuToggle"
               onClick={() => setOpen(!isOpen)}
             >
-              <div className="newburgerintown">
-                <h1>There is a new Burger in town</h1>
-                <p>Taste it, feel it, use it.</p>
-              </div>
               <input type="checkbox" className="cursor-pointer w-10 h-10 hover:bg-red-600" checked={isOpen} />
               <span></span>
               <span></span>
