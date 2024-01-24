@@ -8,14 +8,14 @@ import { IoMdHeartEmpty } from "react-icons/io";
 
 export const Navbar = () => {
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <header className="fixed flex justify-center items-center z-[100] w-screen py-5 font-serif text-black bg-white border border-black border-b-1 top-0 left-0 transition duration-300 ">
       <div
         className="hidden resp:flex justify-center items-center mr-5 w-10 h-10 text-2xl bg-[rgba(255,255,255,0.2)] hover:bg-[rgba(255,255,255,0.3)] rounded-full cursor-pointer"
         onClick={() => {
-          setIsOpen(true);
+          setOpen(true);
         }}
       >
         <i className="fa-solid fa-bars"></i>
@@ -28,7 +28,7 @@ export const Navbar = () => {
         }
         id="back__menu"
         onClick={() => {
-          setIsOpen(false);
+          setOpen(false);
         }}
       ></div>
       <nav
@@ -40,7 +40,38 @@ export const Navbar = () => {
       >
         <ul className="flex items-center gap-96 justify-between resp:mt-5 resp:flex-col">
           <div className="icons-left flex justify-start ml-4 gap-6">
-            <IoIosMenu className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
+            <div
+              title="Menu"
+              id="menuToggle"
+              onClick={() => setOpen(!isOpen)}
+            >
+              <div className="newburgerintown">
+                <h1>There is a new Burger in town</h1>
+                <p>Taste it, feel it, use it.</p>
+              </div>
+              <input type="checkbox" className="cursor-pointer w-10 h-10 hover:bg-red-600" checked={isOpen} />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <li
+                  onClick={() => {
+                    navigate("/");
+                  }}
+                >
+                  Home
+                </li>
+                <li>
+                  <a href="#">Services</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
             <FiSearch className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
           </div>
           <img
@@ -53,11 +84,11 @@ export const Navbar = () => {
           <div className="icons-right flex justify-end ml-10 gap-6">
             <IoMdHeartEmpty className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
             <VscAccount
-            className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300"
-            onClick={() => {
-              navigate("/signup");
-              setIsOpen(false);
-            }}
+              className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300"
+              onClick={() => {
+                navigate("/signup");
+                setIsOpen(false);
+              }}
             />
             <IoBagOutline className="cursor-pointer text-black text-2xl hover:text-red-600 transition duration-300" />
           </div>

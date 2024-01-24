@@ -5,6 +5,7 @@ import { App } from "./views/App.jsx";
 import { Navbar } from "./components/Navbar.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Signup } from "./views/Signup.jsx";
+import { PruebaSideBar } from "./views/PruebaSideBar.jsx";
 
 // import { NotFound } from "./views/notfound.jsx";
 
@@ -33,6 +34,15 @@ const Layout = () => {
           element={
             <>
               <Signup />
+            </>
+          }
+        />
+        <Route
+          path="/sidebar"
+          element={
+            <>
+              <PruebaSideBar />
+
             </>
           }
         />
