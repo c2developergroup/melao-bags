@@ -5,8 +5,7 @@ import { App } from "./views/App.jsx";
 import { Navbar } from "./components/Navbar.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Signup } from "./views/Signup.jsx";
-import { PruebaSideBar } from "./views/PruebaSideBar.jsx";
-
+import { ProductoEspecifico } from "./views/productoEspecifico.jsx";
 // import { NotFound } from "./views/notfound.jsx";
 
 import injectContext from "./store/appContext.jsx";
@@ -38,11 +37,11 @@ const Layout = () => {
           }
         />
         <Route
-          path="/sidebar"
+          path="/ProductoEspecifico"
           element={
             <>
-              <PruebaSideBar />
-
+              <Navbar />
+              <ProductoEspecifico />
             </>
           }
         />

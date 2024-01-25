@@ -1,6 +1,5 @@
 // import React from 'react';
 import { useNavigate } from "react-router-dom";
-import { VscArrowLeft } from "react-icons/vsc";
 
 export const Signup = () => {
   const navigate = useNavigate();
@@ -91,7 +90,7 @@ export const Signup = () => {
                         Acepto los {" "}
                         <a
                           className="font-medium text-primary-600 hover:underline dark:text-primary-500 hover:text-red-600 transition duration-300"
-                          href="#"
+                          onClick={() => navigate("/productoEspecifico")}
                         >
                           Términos y Condiciones
                         </a>

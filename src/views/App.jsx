@@ -89,7 +89,7 @@ export const App = () => {
                 name="name"
                 placeholder="Nombres y Apellidos"
                 required
-                maxlength="100"
+                maxLength="100"
                 className="appearance-none border-none text-black mr-3 leading-tight focus:ring-0 focus:outline-none w-full"
               />
               <div className="border-b border-red-600 py-1 px-2 mb-5"></div>
@@ -98,7 +98,7 @@ export const App = () => {
                 name="email"
                 placeholder="Correo electrónico"
                 required
-                maxlength="100"
+                maxLength="100"
                 className="appearance-none border-none text-black mr-3 leading-tight focus:ring-0 focus:outline-none w-full"
               />
               <div className="border-b border-red-600 py-1 px-2 mb-5"></div>
@@ -107,7 +107,7 @@ export const App = () => {
                 name="number"
                 placeholder="Número de teléfono"
                 required
-                maxlength="100"
+                maxLength="100"
                 className="appearance-none border-none text-black mr-3 leading-tight focus:ring-0 focus:outline-none w-full"
               />
               <div className="border-b border-red-600 py-1 px-2 mb-5"></div>
@@ -116,7 +116,7 @@ export const App = () => {
                 name="subject"
                 placeholder="Asunto"
                 required
-                maxlength="100"
+                maxLength="100"
                 className="appearance-none border-none text-black mr-3 leading-tight focus:ring-0 focus:outline-none w-full"
               />
               <div className="border-b border-red-600 py-1 px-2 mb-8"></div>
@@ -126,12 +126,12 @@ export const App = () => {
                   placeholder="Mensaje"
                   className="appearance-none border-none text-black mr-3 leading-tight focus:ring-0 focus:outline-none resize-none"
                   required
-                  maxlength="1000"
+                  maxLength="1000"
                   rows="6"
                 ></textarea>
                 <div className="flex justify-end">
                   <button className="bg-red-600 rounded-full w-5 h-5 p-[0.2rem] flex justify-center items-center hover:bg-blue-700 cursor-pointer transition duration-300">
-                    <img src="send.svg" class="ml-[0.1rem] w-[80%] h-auto" />
+                    <img src="send.svg" className="ml-[0.1rem] w-[80%] h-auto" />
                   </button>
                 </div>
               </div>
