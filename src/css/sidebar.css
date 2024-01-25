@@ -4,7 +4,7 @@
 #menuToggle {
   display: block;
   position: fixed;
-  top: 50px;
+  top: 45px;
   left: 50px;
   z-index: 1;
   -webkit-user-select: none;
