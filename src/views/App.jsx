@@ -22,13 +22,53 @@ export const App = () => {
         </div>
       </section>
       <section>
-        <div className="w-full">
-          <div className="bg-[url('/carteras.png')] w-6/12 h-[38rem] bg-cover ">
-            <h2>Carteras</h2>
+        <div className="w-full flex">
+          <div className="bg-[url('/carteras.png')] w-6/12 h-[50rem] bg-cover bg-right flex items-end p-7">
+            <div className="">
+              <h2 className="text-4xl text-white shadow-black drop-shadow-md">
+                Carteras
+              </h2>
+              <p className="text-white text-2xl shadow-black drop-shadow-md underline cursor-pointer">
+                Ver mas {">"}
+              </p>
+            </div>
+          </div>
+          <div className="bg-[url('/clutchs.png')] w-6/12 h-[50rem] bg-cover bg-right flex items-end p-7">
+            <div className="">
+              <h2 className="text-4xl text-white shadow-black drop-shadow-md">
+                Clutchs
+              </h2>
+              <p className="text-white text-2xl shadow-black drop-shadow-md underline cursor-pointer">
+                Ver mas {">"}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="w-full flex">
+          <div className="bg-[url('/straps.png')] w-6/12 h-[50rem] bg-cover bg-right flex items-end p-7">
+            <div className="">
+              <h2 className="text-4xl text-white shadow-black drop-shadow-md">
+                Straps
+              </h2>
+              <p className="text-white text-2xl shadow-black drop-shadow-md underline cursor-pointer">
+                Ver mas {">"}
+              </p>
+            </div>
+          </div>
+          <div className="bg-[url('/combos.png')] w-6/12 h-[50rem] bg-cover bg-right flex items-end p-7">
+            <div className="">
+              <h2 className="text-4xl text-white shadow-black drop-shadow-md">
+                Combos
+              </h2>
+              <p className="text-white text-2xl shadow-black drop-shadow-md underline cursor-pointer">
+                Ver mas {">"}
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <section className="mt-20">
+      <section className="mt-16">
+        <h2 className="text-7xl mb-16 text-center">Las más destacadas</h2>
         <img src="/landingpage1.jpg" className="w-[70rem] m-auto" />
         <div className="flex justify-center w-full my-5">
           <button className="w-40 border border-black hover:border-red-600 text-black hover:text-red-600 transition duration-300 rounded-full p-3 text-xl">
@@ -36,6 +76,7 @@ export const App = () => {
           </button>
         </div>
       </section>
+      <section></section>
     </>
   );
 };
