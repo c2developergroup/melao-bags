@@ -38,7 +38,7 @@ export const Navbar = () => {
           (isOpen ? "resp:right-0" : "resp:-right-60")
         }
       >
-        <ul className="flex items-center justify-between resp:mt-5 resp:flex-col">
+        <ul className="flex items-center justify-center resp:mt-5 resp:flex-col">
           <div className="flex items-center">
             <div className="w-20">
               <div>

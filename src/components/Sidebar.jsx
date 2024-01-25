@@ -23,16 +23,16 @@ export const SideBar = () => {
                   navigate("/");
                 }}
               >
-                Home
+                Inicio
               </li>
               <li>
-                <a href="#">Services</a>
+                <a href="#">Productos</a>
               </li>
               <li>
-                <a href="#">About</a>
+                <a href="#">Nosotros</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#">Contacto</a>
               </li>
             </ul>
           </div>
