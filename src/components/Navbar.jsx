@@ -39,7 +39,7 @@ export const Navbar = () => {
         }
       >
         <ul className="flex items-center gap-96 justify-between resp:mt-5 resp:flex-col">
-          <div className="icons-left flex justify-start ml-4 gap-6">
+          <div className="icons-left flex justify-start ml-16 gap-6">
             <div
               title="Menu"
               id="menuToggle"
@@ -55,16 +55,16 @@ export const Navbar = () => {
                     navigate("/");
                   }}
                 >
-                  Home
+                  Inicio
                 </li>
                 <li>
-                  <a href="#">Services</a>
+                  <a href="#">Productos</a>
                 </li>
                 <li>
-                  <a href="#">About</a>
+                  <a href="#">Personalizar</a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="#">Contacto</a>
                 </li>
               </ul>
             </div>
