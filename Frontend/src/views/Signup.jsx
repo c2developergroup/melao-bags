@@ -14,7 +14,7 @@ export const Signup = () => {
             >
               <img
                 className="w-40 mr-2"
-                src="../../public/melaologo.jpg"
+                src="melaologo.jpg"
                 alt="logo"
               />
             </a>
