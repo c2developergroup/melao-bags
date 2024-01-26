@@ -6,11 +6,11 @@ export const App = () => {
       <div className="mt-[6.60rem]"></div>
       <section
         id="inicio"
-        className="bg-[url('/modellandingpage.png')] bg-cover bg-bottom min-h-[100vh]"
+        className="bg-[url('/modellandingpage.png')] bg-cover bg-bottom min-h-[110vh] 2xl:min-h-[160vh]"
       >
-        <div className="w-10/12 m-auto pt-20 md:pt-56">
-          <div className="relative z-10 text-white dark:text-white 3xl:text-4xl xl:text-7xl text-6xl resp:text-6xl transition duration-300 drop-shadow-xl shadow-black">
-            <h2 className="md:block hidden">
+        <div className="w-10/12 m-auto pt-20 md:pt-56 xl:pt-64">
+          <div className="relative z-10 text-white xl:text-7xl text-6xl resp:text-6xl transition duration-300 drop-shadow-xl shadow-black">
+            <h2 className="md:block hidden 3xl:text-9xl">
               Explora la nueva colección <br /> de Melao Bags
             </h2>
           </div>
