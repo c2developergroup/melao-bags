@@ -3,9 +3,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { App } from "./views/App.jsx";
 import { Navbar } from "./components/Navbar.jsx";
+import { NavbarProductos } from "./components/NavbarProductos.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Signup } from "./views/Signup.jsx";
 import { ProductoEspecifico } from "./views/productoEspecifico.jsx";
+import { Productos } from "./views/Productos.jsx";
 // import { NotFound } from "./views/notfound.jsx";
 
 import injectContext from "./store/appContext.jsx";
@@ -42,6 +44,15 @@ const Layout = () => {
             <>
               <Navbar />
               <ProductoEspecifico />
+            </>
+          }
+        />
+        <Route
+          path="/Productos"
+          element={
+            <>
+              <NavbarProductos />
+              <Productos />
             </>
           }
         />
