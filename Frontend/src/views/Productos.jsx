@@ -4,9 +4,9 @@ import { IoMdHeartEmpty } from "react-icons/io";
 export const Productos = () => {
   return (
     <>
-      <section className="pt-40 flex">
+      <section className="pt-[9.9rem] flex">
         <div className="bg-[url('/lonuevo.png')] bg-cover bg-center w-[28.1rem] h-[36.5rem]">
-          <h2 className="text-red-600 text-5xl pt-6 pl-6">LO NUEVO</h2>
+          <h2 className="text-red-600 text-5xl pt-6 pl-6">Lo nuevo</h2>
         </div>
         <div>
           <div className="grid grid-cols-3 px-20 py-10">
@@ -28,6 +28,30 @@ export const Productos = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section className="flex justify-between">
+        <div>PROPS</div>
+        <div className="bg-[url('/lasmasvendidas.png')] bg-cover bg-center w-[28.1rem] h-[36.5rem]">
+          <h2 className="text-red-600 text-[2.5rem] pt-6 pl-6">Las más vendidas</h2>
+        </div>
+      </section>
+      <section className="flex justify-between">
+        <div className="bg-[url('/clutchssection.png')] bg-cover bg-center w-[28.1rem] h-[36.5rem]">
+          <h2 className="text-red-600 text-5xl pt-6 pl-6">Clutchs</h2>
+        </div>
+        <div>PROPS</div>
+      </section>
+      <section className="flex justify-between">
+        <div>PROPS</div>
+        <div className="bg-[url('/koalas.png')] bg-cover bg-center w-[28.1rem] h-[36.5rem]">
+          <h2 className="text-red-600 text-[2.5rem] pt-6 pl-6">Las más vendidas</h2>
+        </div>
+      </section>
+      <section className="flex justify-between">
+        <div className="bg-[url('/combossection.png')] bg-cover bg-center w-[28.1rem] h-[36.5rem]">
+          <h2 className="text-red-600 text-5xl pt-6 pl-6">Clutchs</h2>
+        </div>
+        <div>PROPS</div>
       </section>
     </>
   );
