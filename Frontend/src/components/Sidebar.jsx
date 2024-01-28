@@ -23,10 +23,19 @@ export const SideBar = () => {
                   navigate("/");
                 }}
               >
-                Inicio
+                <a>
+                  Inicio
+                </a>
               </li>
-              <li>
-                <a href="#">Productos</a>
+              <li
+                onClick={() => {
+                  navigate("/productos");
+                }}
+              >
+                <a>
+
+                Productos
+                </a>
               </li>
               <li>
                 <a href="#">Nosotros</a>

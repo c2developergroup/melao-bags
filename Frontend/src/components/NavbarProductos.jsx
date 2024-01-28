@@ -35,7 +35,7 @@ export const NavbarProductos = () => {
         />
         <IoBagOutline className="cursor-pointer text-black text-2xl hover:text-red-600 ml-6" />
       </div>
-      <div className="fixed flex justify-center gap-56 items-center w-screen py-4 font-serif text-black bg-white border border-black border-b-1 top-24 left-0 transition duration-300">
+      <div className="fixed flex justify-center gap-56 items-center w-screen py-4 pr-20 font-serif text-black bg-white border border-black border-b-1 top-24 left-0 transition duration-300">
         <button className="hover:text-red-600 transition duration-300 text-xl">Lo nuevo</button>
         <button className="hover:text-red-600 transition duration-300 text-xl">Las más vendidas</button>
         <button className="hover:text-red-600 transition duration-300 text-xl">Clutchs</button>
