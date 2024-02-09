@@ -6,7 +6,7 @@ import { Navbar } from "./components/Navbar.jsx";
 import { NavbarProductos } from "./components/NavbarProductos.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { Signup } from "./views/Signup.jsx";
-import { ProductoEspecifico } from "./views/productoEspecifico.jsx";
+import { ProductoEspecifico } from "./views/ProductoEspecifico.jsx";
 import { Productos } from "./views/Productos.jsx";
 // import { NotFound } from "./views/notfound.jsx";
 
