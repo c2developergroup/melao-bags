@@ -9,6 +9,7 @@ import {
   FaUsers,
 } from "react-icons/fa6";
 import { PiGarageFill, PiSignOutBold } from "react-icons/pi";
+import { FaRegUserCircle } from "react-icons/fa";
 
 // import { MelaoDialog } from "../components/dialog";
 
@@ -20,23 +21,32 @@ export default function Home() {
         className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 ">
+        <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 text-gray-900">
+          <a
+            href="https://flowbite.com/"
+            className="flex items-center ps-2.5 mb-5"
+          >
+            <FaRegUserCircle className="h-6 w-6 me-3 sm:h-7 sm:w-7 text-gray-700" />
+            <span className="self-center text-xl font-semibold whitespace-nowrap">
+              Alexandra Serna
+            </span>
+          </a>
           <ul className="space-y-2 font-medium">
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 :bg-gray-700 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 group"
               >
-                <TiHome className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900 :text-white" />
+                <TiHome className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900" />
                 <span className="ms-3">Dashboard</span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 :bg-gray-700 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 group"
               >
-                <FaInbox className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900 :text-white" />
+                <FaInbox className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900" />
                 <span className="flex-1 ms-3 whitespace-nowrap">Inbox</span>
                 <span className="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full  ">
                   3
@@ -46,9 +56,9 @@ export default function Home() {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 :bg-gray-700 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 group"
               >
-                <FaUsers className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900 :text-white" />
+                <FaUsers className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900" />
                 <span className="flex-1 ms-3 whitespace-nowrap">Usuarios</span>
                 <span className="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full  ">
                   Premium
@@ -58,18 +68,18 @@ export default function Home() {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 :bg-gray-700 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 group"
               >
-                <FaUser className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900 :text-white" />
+                <FaUser className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900" />
                 <span className="flex-1 ms-3 whitespace-nowrap">Clientes</span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 :bg-gray-700 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 group"
               >
-                <PiGarageFill className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900 :text-white" />
+                <PiGarageFill className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900" />
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   Inventario
                 </span>
@@ -78,27 +88,27 @@ export default function Home() {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 :bg-gray-700 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 group"
               >
-                <FaBagShopping className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900 :text-white" />
+                <FaBagShopping className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900" />
                 <span className="flex-1 ms-3 whitespace-nowrap">Productos</span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 :bg-gray-700 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 group"
               >
-                <FaCartShopping className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900 :text-white" />
+                <FaCartShopping className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900" />
                 <span className="flex-1 ms-3 whitespace-nowrap">Pedidos</span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 :bg-gray-700 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 group"
               >
-                <PiSignOutBold className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900 :text-white" />
+                <PiSignOutBold className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75  group-hover:text-gray-900" />
                 <span className="flex-1 ms-3 whitespace-nowrap">
                   Cerrar sesión
                 </span>
